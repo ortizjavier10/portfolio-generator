@@ -1,11 +1,13 @@
-const profileDataArgs = process.argv.slice(2, process.argv.length);
-console.log(profileDataArgs);
+// const profileDataArgs = process.argv.slice(2, process.argv.length);
+// console.log(profileDataArgs);
 
-const printProfileData = profileDataArr => {
-    console.log('================');
+// const printProfileData = profileDataArr => {
+//     console.log('================');
 
-    profileDataArr.forEach(profileItem => console.log(profileItem));
-};
+//     profileDataArr.forEach(profileItem => console.log(profileItem));
+// };
 
+// printProfileData(profileDataArgs);
 
-printProfileData(profileDataArgs);
+const generatePage = () => 'Name: JAvier, Hithub: ortizjavier10';
+
