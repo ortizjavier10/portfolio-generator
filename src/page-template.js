@@ -10,19 +10,11 @@ const generatePage = (userName, githubName) => {
     </head>
 
      <body>
-        <h1>${name}</h1>
-        <h2><a href="https://github.com/${github}">Github</a></h2>
+        <h1>${userName}</h1>
+        <h2><a href="https://github.com/${githubName}">Github</a></h2>
     </body>
     </html>
     `;
 };
-// fs.writeFile('index.html', generatePage(name, github), err => {
-//     if (err) throw new Error(err);
-
-//     console.log('Portfolio complete! Check out index.html to see the output!')
-// });
-
-
-
 
 module.exports = generatePage;
