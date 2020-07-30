@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fswriteFile('./dist/index.html', fileContent, err => {
+        fs.writeFile('./dist/index.html', fileContent, err => {
             // if there's an error reject the PRomise and send the error to the Promise's `.catch()` method
             if (err) {
                 reject(err);
@@ -21,14 +21,14 @@ const writeFile = fileContent => {
 
 const copyFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fscopyFile('./dist/index.html', fileContent, err => {
+        fs.copyFile('./src/style.css', fileContent, err => {
             if (err) {
                 reject(err);
                 return;
             }
             resolve({
                 ok: true,
-                message: 'File copied!'
+                message: 'File styled!'
             });
         });
     });
